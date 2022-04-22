@@ -7,7 +7,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from api.permission import IsAuthorOrReadonly
 from api.serializers import (PostSerializer, CommentSerializer,
                              GroupSerializer, FollowSerializer)
-from posts.models import Post, Comment, Group, Follow
+from posts.models import Post, Group
 
 
 class PostViewSet(viewsets.ModelViewSet):
